@@ -76,7 +76,6 @@ const displayQuiz = (data) => {
 
 // EventListener for quiz submit button
   document.querySelector("#submit").addEventListener('click', function(){
-  console.log('hello')
   if (answers.length < 6) {
     return;
   }
@@ -110,7 +109,7 @@ const displayQuiz = (data) => {
   }
 
   // data setting on local storage and getting data from local storage
-  let storage = JSON.parse(localStorage.getItem("result"));
+  let storage = JSON.parse(localStorage.getItem("results"));
   if (storage) {
     localStorage.setItem(
       "results",
