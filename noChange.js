@@ -31,7 +31,7 @@ const quizTimer = (dismiss) => {
 
 // display quiz options
 const displayQuizOptions = (quiz, i) => {
-  let serial = 1;
+   let serial = 1;
   let generatedOptions = "";
   for (let option of quiz) {
     generatedOptions += `<div
